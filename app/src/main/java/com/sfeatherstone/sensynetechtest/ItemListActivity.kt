@@ -2,6 +2,7 @@ package com.sfeatherstone.sensynetechtest
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
@@ -11,9 +12,12 @@ import android.view.ViewGroup
 import android.widget.TextView
 
 import com.sfeatherstone.sensynetechtest.dummy.DummyContent
+import com.sfeatherstone.sensynetechtest.repository.network.RemoteFileReader
 import kotlinx.android.synthetic.main.activity_item_list.*
 import kotlinx.android.synthetic.main.item_list_content.view.*
 import kotlinx.android.synthetic.main.item_list.*
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 /**
  * An activity representing a list of Pings. This activity
@@ -47,6 +51,12 @@ class ItemListActivity : AppCompatActivity() {
         }
 
         setupRecyclerView(item_list)
+
+        GlobalScope.launch {
+            val rfr = RemoteFileReader()
+            val r = rfr.run("http://media.nhschoices.nhs.uk/data/foi/Hospital.csv")
+            r?.use { reader -> reader.forEachLine { Log.d("zx", it.split("�").toString()) } }
+        }
     }
 
     private fun setupRecyclerView(recyclerView: RecyclerView) {
