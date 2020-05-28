@@ -1,9 +1,9 @@
-package com.sfeatherstone.sensynetechtest.repository
+package com.sfeatherstone.hospitaltechtest.repository
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.whenever
-import com.sfeatherstone.sensynetechtest.repository.network.RemoteFileReader
+import com.sfeatherstone.hospitaltechtest.repository.network.RemoteFileReader
 import org.junit.Test
 
 import org.junit.Assert.*

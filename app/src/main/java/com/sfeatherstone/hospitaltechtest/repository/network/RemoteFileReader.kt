@@ -1,4 +1,4 @@
-package com.sfeatherstone.sensynetechtest.repository.network
+package com.sfeatherstone.hospitaltechtest.repository.network
 
 import okhttp3.OkHttpClient
 import okhttp3.Request

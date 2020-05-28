@@ -1,4 +1,4 @@
-package com.sfeatherstone.sensynetechtest.model
+package com.sfeatherstone.hospitaltechtest.model
 
 data class Hospital(
     val OrganisationID: String,

@@ -1,10 +1,10 @@
-package com.sfeatherstone.sensynetechtest.ui
+package com.sfeatherstone.hospitaltechtest.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
-import com.sfeatherstone.sensynetechtest.R
-import com.sfeatherstone.sensynetechtest.model.Hospital
+import com.sfeatherstone.hospitaltechtest.R
+import com.sfeatherstone.hospitaltechtest.model.Hospital
 import kotlinx.android.synthetic.main.item_list.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 

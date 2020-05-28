@@ -1,4 +1,4 @@
-package com.sfeatherstone.sensynetechtest.ui
+package com.sfeatherstone.hospitaltechtest.ui
 
 import android.os.Bundle
 import androidx.recyclerview.widget.RecyclerView
@@ -8,9 +8,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
-import com.sfeatherstone.sensynetechtest.R
+import com.sfeatherstone.hospitaltechtest.R
 
-import com.sfeatherstone.sensynetechtest.model.ListHospital
+import com.sfeatherstone.hospitaltechtest.model.ListHospital
 import kotlinx.android.synthetic.main.item_list_content.view.*
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 

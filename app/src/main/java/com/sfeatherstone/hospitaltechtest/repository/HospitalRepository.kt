@@ -1,9 +1,8 @@
-package com.sfeatherstone.sensynetechtest.repository
+package com.sfeatherstone.hospitaltechtest.repository
 
-import android.util.Log
-import com.sfeatherstone.sensynetechtest.model.Hospital
-import com.sfeatherstone.sensynetechtest.model.ListHospital
-import com.sfeatherstone.sensynetechtest.repository.network.RemoteFileReader
+import com.sfeatherstone.hospitaltechtest.model.Hospital
+import com.sfeatherstone.hospitaltechtest.model.ListHospital
+import com.sfeatherstone.hospitaltechtest.repository.network.RemoteFileReader
 
 class HospitalRepository(private val remoteFileReader: RemoteFileReader) {
 

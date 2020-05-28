@@ -1,4 +1,4 @@
-package com.sfeatherstone.sensynetechtest.ui
+package com.sfeatherstone.hospitaltechtest.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,8 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
-import com.sfeatherstone.sensynetechtest.R
-import com.sfeatherstone.sensynetechtest.model.Hospital
+import com.sfeatherstone.hospitaltechtest.R
+import com.sfeatherstone.hospitaltechtest.model.Hospital
 import kotlinx.android.synthetic.main.activity_item_detail.*
 import kotlinx.android.synthetic.main.item_detail.view.*
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel

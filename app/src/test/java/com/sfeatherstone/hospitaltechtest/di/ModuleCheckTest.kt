@@ -1,6 +1,6 @@
-package com.sfeatherstone.sensynetechtest.di
+package com.sfeatherstone.hospitaltechtest.di
 
-import com.sfeatherstone.sensynetechtest.App.Companion.koinModules
+import com.sfeatherstone.hospitaltechtest.App.Companion.koinModules
 import org.junit.Test
 import org.junit.experimental.categories.Category
 import org.koin.test.AutoCloseKoinTest

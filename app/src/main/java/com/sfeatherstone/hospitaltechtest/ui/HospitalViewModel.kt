@@ -1,12 +1,12 @@
-package com.sfeatherstone.sensynetechtest.ui
+package com.sfeatherstone.hospitaltechtest.ui
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.sfeatherstone.sensynetechtest.model.Hospital
-import com.sfeatherstone.sensynetechtest.model.ListHospital
-import com.sfeatherstone.sensynetechtest.repository.HospitalRepository
+import com.sfeatherstone.hospitaltechtest.model.Hospital
+import com.sfeatherstone.hospitaltechtest.model.ListHospital
+import com.sfeatherstone.hospitaltechtest.repository.HospitalRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

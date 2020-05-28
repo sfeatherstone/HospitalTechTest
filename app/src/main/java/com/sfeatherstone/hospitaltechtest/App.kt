@@ -1,7 +1,7 @@
-package com.sfeatherstone.sensynetechtest
+package com.sfeatherstone.hospitaltechtest
 
 import android.app.Application
-import com.sfeatherstone.sensynetechtest.di.appModule
+import com.sfeatherstone.hospitaltechtest.di.appModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
