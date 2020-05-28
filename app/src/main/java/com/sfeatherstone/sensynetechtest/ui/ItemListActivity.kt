@@ -1,15 +1,15 @@
-package com.sfeatherstone.sensynetechtest
+package com.sfeatherstone.sensynetechtest.ui
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.snackbar.Snackbar
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import com.sfeatherstone.sensynetechtest.R
 
 import com.sfeatherstone.sensynetechtest.dummy.DummyContent
 import com.sfeatherstone.sensynetechtest.repository.network.RemoteFileReader
@@ -52,15 +52,22 @@ class ItemListActivity : AppCompatActivity() {
 
         setupRecyclerView(item_list)
 
+/*
         GlobalScope.launch {
             val rfr = RemoteFileReader()
             val r = rfr.run("http://media.nhschoices.nhs.uk/data/foi/Hospital.csv")
             r?.use { reader -> reader.forEachLine { Log.d("zx", it.split("�").toString()) } }
         }
+*/
     }
 
     private fun setupRecyclerView(recyclerView: RecyclerView) {
-        recyclerView.adapter = SimpleItemRecyclerViewAdapter(this, DummyContent.ITEMS, twoPane)
+        recyclerView.adapter =
+            SimpleItemRecyclerViewAdapter(
+                this,
+                DummyContent.ITEMS,
+                twoPane
+            )
     }
 
     class SimpleItemRecyclerViewAdapter(private val parentActivity: ItemListActivity,
@@ -74,7 +81,8 @@ class ItemListActivity : AppCompatActivity() {
             onClickListener = View.OnClickListener { v ->
                 val item = v.tag as DummyContent.DummyItem
                 if (twoPane) {
-                    val fragment = ItemDetailFragment().apply {
+                    val fragment = ItemDetailFragment()
+                        .apply {
                         arguments = Bundle().apply {
                             putString(ItemDetailFragment.ARG_ITEM_ID, item.id)
                         }
