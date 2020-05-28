@@ -1,9 +1,6 @@
 package com.sfeatherstone.sensynetechtest.ui
 
-import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -13,14 +10,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import com.sfeatherstone.sensynetechtest.R
 
-import com.sfeatherstone.sensynetechtest.dummy.DummyContent
 import com.sfeatherstone.sensynetechtest.model.ListHospital
-import com.sfeatherstone.sensynetechtest.repository.network.RemoteFileReader
-import kotlinx.android.synthetic.main.activity_item_list.*
 import kotlinx.android.synthetic.main.item_list_content.view.*
-import kotlinx.android.synthetic.main.item_list.*
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 
 /**

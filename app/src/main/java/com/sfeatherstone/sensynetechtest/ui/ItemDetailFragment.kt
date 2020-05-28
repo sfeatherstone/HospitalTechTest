@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import com.sfeatherstone.sensynetechtest.R
-import com.sfeatherstone.sensynetechtest.dummy.DummyContent
 import com.sfeatherstone.sensynetechtest.model.Hospital
 import kotlinx.android.synthetic.main.activity_item_detail.*
 import kotlinx.android.synthetic.main.item_detail.view.*
