@@ -17,7 +17,7 @@ class HospitalRepository(private val remoteFileReader: RemoteFileReader) {
 
     fun getSectors(): List<String> = hospitalCache.hospitalSectorList.toList()
 
-    fun getHospitaL(id: String): Hospital? = hospitalCache.hospitalMap.get(id)
+    fun getHospital(id: String): Hospital? = hospitalCache.hospitalMap.get(id)
 
     private fun populateCache(): HospitalCache {
         val reader = remoteFileReader.run("http://media.nhschoices.nhs.uk/data/foi/Hospital.csv")
@@ -57,7 +57,6 @@ class HospitalRepository(private val remoteFileReader: RemoteFileReader) {
                     hospitalList.add(hospital)
                     sectorList.add(hospital.Sector)
                     hospitalMap[hospital.OrganisationID] = hospital
-                    Log.d("zx", hospital.toString())
                 }
             }
             }
